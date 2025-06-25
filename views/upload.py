@@ -9,7 +9,7 @@ import os
 import html
 
 # Set up Google Gemini API
-genai.configure(api_key="AIzaSyDH3uxlJwOZkrmSatvbfbEojlsBRmqYOWA")  # <-- Replace if needed
+genai.configure(api_key="")  # <-- Replace if needed
 
 def get_base64_image(image_path):
     with open(image_path, "rb") as img:
