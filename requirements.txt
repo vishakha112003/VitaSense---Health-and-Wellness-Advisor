@@ -1,0 +1,13 @@
+streamlit
+pdfplumber
+pytesseract
+google.generativeai
+opencv-python
+numpy
+pillow
+bcrypt
+db-sqlite3
+cohere
+#https://dribbble.com/shots/22955900-Health-Monitoring-Dashboard-Page-Exploration
+
+# Streamlit UI
