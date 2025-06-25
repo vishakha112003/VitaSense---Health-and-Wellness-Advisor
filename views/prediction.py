@@ -154,7 +154,7 @@ if "authenticated" in st.session_state and st.session_state.authenticated:
                 # Gemini Enhanced Explanation
                 try:
                     with st.spinner("Analyzing..."):
-                        genai.configure(api_key="AIzaSyAhQM6icwPc-Wlx4xdIr4Xp9ndolCCIqEM")  # replace with your API key
+                        genai.configure(api_key="")  # replace with your API key
                         gemini_model = genai.GenerativeModel("gemini-1.5-flash")
                         prompt = f"The system has identified the following possible condition(s): {', '.join(predicted_labels)}. I have a dataset containing the following features: Age, Systolic, Diastolic, HeartRate, RespiratoryRate, Glucose, SpO2, Sex, Smoking, Alcohol, FamilyHistory, Medication, Height(m), Weight(kg), BMI, BodyTemp, SleepHours, StepsPerDay, Hydration(L), WaistCircumference. Based on these inputs, the system has identified the following possible condition(s): [List the conditions identified by the system].Please explain the possible causes of each condition, the other symptoms associated with it, and suggest solutions to address or manage the condition. If the condition is related to lifestyle factors, provide recommendations for improvement in diet, exercise, and habits."
                         gemini_response = gemini_model.generate_content(prompt)
