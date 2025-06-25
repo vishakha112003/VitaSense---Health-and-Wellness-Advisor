@@ -4,7 +4,7 @@ import base64
 import time
 
 # Set up Cohere API key
-COHERE_API_KEY = "aH4cYU8eyVoMx3wN56yjZUf8ClJZQiK2o4gEJtkE"  # Replace with your actual API key
+COHERE_API_KEY = ""  # Replace with your actual API key
 
 # Initialize Cohere Client
 co = cohere.Client(COHERE_API_KEY)
